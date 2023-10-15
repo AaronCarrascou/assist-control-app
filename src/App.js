@@ -1,6 +1,6 @@
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Header from './components/shared/Header';
+import Navbar from './components/shared/Navbar';
 import Contracts from './components/Contracts/Contracts';
 import Employees from './components/Employees/Employees';
 import Positions from './components/Positions/Positions';
@@ -9,11 +9,12 @@ function App() {
   return (
     <BrowserRouter>
       <>
-        <Header />
+        <Navbar />
         <Routes>
-          <Route path="/" element={<Contracts />} />
-          <Route path="/employees" element={<Employees />} />
+          <Route path="/" element={<Employees />} />
           <Route path="/positions" element={<Positions />} />
+          <Route path="/contracts" element={<Contracts />} />
+
         </Routes>
       </>
     </BrowserRouter>
