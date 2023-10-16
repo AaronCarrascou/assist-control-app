@@ -4,6 +4,7 @@ import { Modal } from 'react-bootstrap';
 const CommonModal = ({ showModal, setShowModal, title, form }) => {
 
   const handleCloseModal = () => setShowModal(false);
+
   return (
     <div>
       <Modal show={showModal} onHide={handleCloseModal}>
@@ -11,7 +12,7 @@ const CommonModal = ({ showModal, setShowModal, title, form }) => {
           <Modal.Title>{title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          contenido modal
+          {form}
         </Modal.Body>
 
       </Modal>

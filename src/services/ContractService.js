@@ -1,10 +1,10 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:8080/';
+const BASE_URL = 'http://localhost:8080/contract';
 
 export const getAllContracts = async () => {
     try {
-        const response = await axios.get(`${BASE_URL}contract`);
+        const response = await axios.get(`${BASE_URL}`);
         return response.data;
     } catch (err) {
         throw err;
@@ -13,16 +13,16 @@ export const getAllContracts = async () => {
 
 export const postCreateContract = async (contractData) => {
     try {
-        const response = await axios.post(`${BASE_URL}contract`, contractData);
+        const response = await axios.post(`${BASE_URL}/create_contract`, contractData);
         return response.data;
     } catch (err) {
         throw err;
     }
 };
 
-export const getContractById = async (contractId) => {
+export const deleteContractById = async (contractId) => {
     try {
-        const response = await axios.get(`${BASE_URL}contract/${contractId}`);
+        const response = await axios.delete(`${BASE_URL}/delete/${contractId}`);
         return response.data;
     } catch (err) {
         throw err;

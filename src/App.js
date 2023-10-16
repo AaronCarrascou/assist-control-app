@@ -1,9 +1,9 @@
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './components/shared/Navbar';
-import Contracts from './components/Contracts/Contracts';
-import Employees from './components/Employees/Employees';
-import Positions from './components/Positions/Positions';
+import Contracts from './components/pages/Contracts/Contracts';
+import Employees from './components/pages/Employees/Employees';
+import Positions from './components/pages/Positions/Positions';
 
 function App() {
   return (

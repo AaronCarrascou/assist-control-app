@@ -1,0 +1,52 @@
+html,
+body,
+#root {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(to bottom, white 35%, #9CD6CE);
+}
+
+body {
+    font-family: 'Prompt', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Prompt', sans-serif;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #049993;
+    color: white;
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link:hover {
+    color: #049993;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 5px #049993 !important;
+    border-color: #049993;
+}
+
+.btn-primary {
+    background-color: #049993 !important;
+    border-color: #049993 !important;
+
+}
+  
+.form-control select option:hover {
+    background-color: red !important;
+    color: black !important; 
+}
+
+option:hover{
+    background-color: red !important;
+}
